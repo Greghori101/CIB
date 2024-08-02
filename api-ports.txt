@@ -1,0 +1,7 @@
+med-guard=>:8000
+gsm=>:8001
+gdme=>:8002
+grdv=>:8003
+aid=>:5000
+ws://localhost:8080
+
