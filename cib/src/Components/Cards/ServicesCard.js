@@ -135,7 +135,7 @@ export default function ServicesCard() {
                                     <div className="relative card mb-2    !rounded-xl">
                                         <div className="absolute top-0 left-0 z-30 !bg-black/50 w-full h-full rounded-xl"></div>
                                         <img
-                                            src={`data:image/${service.main_photo.extension};base64,${service.main_photo.content}`}
+                                            src={`data:image/${service.main_photo?.extension};base64,${service.main_photo?.content}`}
                                             className="absolute w-full h-full object-cover   rounded-xl"
                                         ></img>
                                         <div className=" card-body pt-8 z-40">
@@ -277,7 +277,7 @@ export default function ServicesCard() {
                                                                 key={id}
                                                             >
                                                                 <img
-                                                                    src={`data:image/${image.extension};base64,${image.content}`}
+                                                                    src={`data:image/${image?.extension};base64,${image?.content}`}
                                                                     alt="image 1"
                                                                     className="w-[400px] h-[200px] object-cover rounded-xl"
                                                                 />

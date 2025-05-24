@@ -42,7 +42,7 @@ export default function Login() {
 					icon: "success",
 					iconColor: "#3dc00c",
 				}).then(async () => {
-					const imgUrl = `data:image/${response.data.user.profile_picture.extension};base64,${response.data.user.profile_picture.content}`;
+					const imgUrl = `data:image/${response.data.user.profile_picture?.extension};base64,${response.data.user.profile_picture?.content}`;
 					window.localStorage.setItem("profile_picture_url", imgUrl);
 					window.localStorage.setItem("token", response.data.token);
 					window.localStorage.setItem("role", response.data.user.role);

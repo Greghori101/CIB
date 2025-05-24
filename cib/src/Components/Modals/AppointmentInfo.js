@@ -142,7 +142,7 @@ const change_doctor = (event, option) => {
 
     
     useEffect(() => {
-        var url = `data:image/${element.prescription.extension};base64,${element.prescription.content}`;
+        var url = `data:image/${element.prescription?.extension};base64,${element.prescription?.content}`;
 
         fetch(url).then(async (res) => {
             const blob = await res.blob();

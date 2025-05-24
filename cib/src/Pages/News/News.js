@@ -195,7 +195,7 @@ export default function News({ limit }) {
                                             </p>
                                             <div className="author align-items-center">
                                                 <img
-                                                    src={`data:image/${post.author.profile_picture.extension};base64,${post.author.profile_picture.content}`}
+                                                    src={`data:image/${post.author.profile_picture?.extension};base64,${post.author.profile_picture?.content}`}
                                                     alt="..."
                                                     className="avatar shadow"
                                                 />

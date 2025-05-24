@@ -54,7 +54,7 @@ export default function NewsDetails() {
                                     {post?.images.map((image, id) => {
                                         return (
                                                 <img key={id}
-                                                    src={`data:image/${image.extension};base64,${image.content}`}
+                                                    src={`data:image/${image?.extension};base64,${image?.content}`}
                                                     className="img-fluid border-radius-lg max-h-[500px] "
                                                 />
                                         );
@@ -69,7 +69,7 @@ export default function NewsDetails() {
                                     </p>
                                     <div className="author align-items-center">
                                         <img
-                                            src={`data:image/${post?.author.profile_picture.extension};base64,${post?.author.profile_picture.content}`}
+                                            src={`data:image/${post?.author.profile_picture?.extension};base64,${post?.author.profile_picture?.content}`}
                                             alt="..."
                                             className="avatar shadow"
                                         />
